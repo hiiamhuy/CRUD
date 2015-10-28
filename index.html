@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Parse intro</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		
+        <!-- Include parse library here -->
+        <script src="https://www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+        <link rel="stylesheet" href="./css/main.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Reviews of Movies</h1>   
+            <img src="img/title_JPG.jpg"> </img>
+            <p>Average Rating: <div id="avgrating"></div></p>
+            <h2>Storyline</h2>
+            <P>Following the end of the Vietnam War in 1975, millions refugees took the perilous escape across South China Sea to find freedom. Many died of drowning or starvation and thirst. Other lost at sea for days while some were pillaged, robbed and raped by pirates. However, more than 30 years after, no major film or television program tells their stories. Bolinao 52 is a long-silenced voice, an unspoken legacy of the Vietnam War - the story of the Vietnamese Boat People.</P>
+            </div>
+            <div class="container">
+            <h3>Write a review!</h3>
+    		<form>
+                <div class="form-group">
+                    <div id="rating"></div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="review-title" type="text" placeholder = "A title for your review"></input>
+                </div>
+                <div class="form-group">
+                    <input  class="form-control" id="review-desc" type="text" placeholder = "What did you think of this?"></input>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+
+            </form>
+    	</div>
+        <div class="container">
+        <h4>Reviews</h4>
+        </div>
+        <div class="container">
+            <ol class="listofreviews">
+            </ol>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/review.js"></script>
+    <script src="raty-2.7.0/lib/jquery.raty.js"></script>
+</html>
